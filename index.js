@@ -3,6 +3,8 @@ const app = express();
 const seatsRouter = require('./Routes/Seats');
 const gpaRouter = require('./Routes/cgpa');
 
+const port = process.env.PORT || 3333;
+
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
@@ -14,6 +16,6 @@ app.get('/',(req,res)=>{
     res.render('home');
 })
 
-app.listen(3333,()=>{
+app.listen(port,()=>{
     console.log(`Server Running`);
 })
