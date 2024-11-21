@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Information</title>
+    <link rel="stylesheet" href="seats.css">
+</head>
+<body>
+    <div class="nav">
+        <h4 class="back"><a href="/"><button>Back</button></a></h4>
+        <h1>Seats Information</h1><br><br>
+    </div>
+    <ul>
+        <% seatsData.forEach(function(seat) { %>
+            <li>
+                <strong>Area: </strong><%= seat.areaName %><br><br>
+                <strong>Total Seats: </strong><%= seat.totalSeats %><br>
+                <strong>Pref 1: </strong><%= seat.preferences.pref1 %><br>
+                <strong>Pref 2: </strong><%= seat.preferences.pref2 %><br>
+                <strong>Pref 3: </strong><%= seat.preferences.pref3 %><br>
+                <strong>Pref 4: </strong><%= seat.preferences.pref4 %><br>
+                <strong>Pref 5: </strong><%= seat.preferences.pref5 %><br>
+            </li>
+            <br><hr><br>
+        <% }); %>
+    </ul>
+</body>
+</html>

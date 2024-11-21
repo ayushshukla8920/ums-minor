@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+h1{
+    display: inline;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    margin-left: 24vw;
+}
+.nav{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+ul{
+    padding-left: 50px;
+}
+ul li{
+    list-style-type: none;
+}
+.back{
+    display: inline;
+}
+h4{
+    margin-left: 5vw;
+}
+a{
+    text-decoration: none;
+}
+button{
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: rgb(44, 118, 255);
+}
