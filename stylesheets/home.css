@@ -8,14 +8,14 @@ body{
 }
 .main{
     margin-top: 30vh;
-    margin-left: 32vw;
+    margin-left: 36vw;
 }
 h1{
     margin-top: 10vh;
-    margin-left: 36vw;
+    margin-left: 39vw;
 }
 h3{
-    margin-left: 42vw;
+    margin-left: 45vw;
 }
 button{
     margin-right: 40px;
@@ -30,4 +30,16 @@ button{
 }
 button:hover{
     cursor: pointer;
+}
+.one{
+    display: flex;
+}
+.two button{
+    background-color: rgb(255, 218, 9);
+    color: black;
+}
+.two{
+    display: flex;
+    padding-left: 16vh;
+    margin-top: 5vh;
 }

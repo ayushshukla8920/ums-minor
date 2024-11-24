@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your CGPA</title>
+    <link rel="stylesheet" href="fetch.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="nav">
+            <h4 class="back"><a href="/"><button>Back</button></a></h4>
+            <h1>Find Your CGPA</h1><br><br>
+        </div>
+        <form id="cgpaForm">
+            <input type="number" id="regdNo" placeholder="Enter Registration Number" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <h1 id="result"></h1>
+    <script>
+        let res = document.getElementById('result');
+        document.getElementById('cgpaForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const regdNo = document.getElementById('regdNo').value;
+            if (regdNo.trim().length < 8 || regdNo.trim().length > 8) {
+                alert('Please enter a valid Registration Number.');
+                return;
+            }
+            const payload = { RegdNo: regdNo };
+            try {
+                const response = await fetch('/find_cgpa', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                });
+    
+                if (response.ok) {
+                    const data = await response.json();
+                    res.innerHTML = `Your Current CGPA is : ${data.gpa}`;
+                    setTimeout(() => {
+                        res.innerHTML = '';
+                    }, 7000);
+                } else {
+                    alert('Error: Unable to fetch CGPA. Please try again later.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please check your network and try again.');
+            }
+        });
+    </script>
+    
+</body>
+</html>

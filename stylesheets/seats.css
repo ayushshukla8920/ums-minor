@@ -41,3 +41,6 @@ button{
     font-weight: bold;
     background-color: rgb(44, 118, 255);
 }
+button:hover{
+    cursor: pointer;
+}
