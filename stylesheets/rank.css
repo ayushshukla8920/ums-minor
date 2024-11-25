@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav h1{
+    margin-top: 40vh;
+    margin-left: 37vw;
+}
+body{
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+form{
+    margin-top: 1vh;
+    display: flex;
+    margin-left: 30vw;
+}
+input{
+    background-color: rgb(30, 30, 30);
+    padding-left: 2vw;
+    height: 8vh;
+    width: 20vw;
+    border: 2px solid rgb(80,80,80);
+    margin-right: 2vw;
+    color: white;
+    font-size: 14pt;
+    border-radius: 20px;
+}
+.back{
+    display: inline;
+    margin-left: 5vw;
+}
+.nav{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.nav button{
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: rgb(44, 118, 255);
+}
+button:hover{
+    cursor: pointer;
+}
+.form-container{
+    height: 20vh;
+    width: 100vw;
+}
+
+.nav h1{
+    display: inline;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    margin-left: 31vw;
+}
+form button{
+    margin-left: 1vw;
+    cursor: pointer;
+    margin-top: .5vh;
+    width: 120px;
+    height: 55px;
+    border-radius: 30px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: rgb(255, 218, 9);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.head{
+    display: flex;
+    align-content: space-around;
+}
+.head div{
+    color: rgb(255, 218, 9);
+    margin-top: 10vh;
+    width: 15vh;
+    margin-left: 8vh;
+}
+.row{
+    margin-top: 4vh;
+    display: flex;
+    align-content: space-around;
+}
+.row div{
+    color: rgb(159, 159, 159);
+    justify-content: center;
+    width: 14.2vh;
+    margin-left: 10vh;
+}
+.data h1{
+    margin-top: 30vh;
+    color: rgb(159, 159, 159);
+    justify-content: center;
+    width: 100%;
+    margin-left: 35vw;
+}
+.cgpa{
+    color: #FF69B4;
+}
+#clear{
+    background-color: #FF69B4;
+}

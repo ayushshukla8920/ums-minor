@@ -40,6 +40,6 @@ button:hover{
 }
 .two{
     display: flex;
-    padding-left: 16vh;
+    padding-left: 0vh;
     margin-top: 5vh;
 }

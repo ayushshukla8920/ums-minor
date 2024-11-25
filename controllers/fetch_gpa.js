@@ -6,6 +6,7 @@ async function handlePostCgpa(req,res){
         DdAreaId: '1-1079',
         RegdNo: `${req.body.RegdNo}`
     };
+    console.log(req.body.RegdNo);
     axios.post(url, data)
         .then(response => {
             res.status(200).json({ gpa: response.data.d[0].SCGPA})
