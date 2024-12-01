@@ -1,4 +1,4 @@
-const data = require('./data2.json');
+const data = require('./regNo.json');
 const express = require('express');
 const axios = require('axios');
 const app = express();
