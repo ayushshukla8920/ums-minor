@@ -8,7 +8,7 @@ const rankRouter = require('./Routes/rank');
 const port = process.env.PORT || 3333;
 
 app.set('view engine', 'ejs');
-app.set('views', './views');
+app.set("views", __dirname + "/views");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
