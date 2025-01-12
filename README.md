@@ -1,7 +1,7 @@
 ## UMS Minor
 
 This Project is Hosted on Render's Free Tier,So it spins down due to inactivity and may take upto 50 seconds to load content upon request.
-Access it at : https://ums-minor.onrender.com/
+Access it at : [https://ums-minor.onrender.com/](https://ums-minor.vercel.app/rank)
 
 This Project fetches Data from the LPU UMS API's and Provides Various useful Features like:
 
