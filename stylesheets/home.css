@@ -12,10 +12,11 @@ body{
 }
 h1{
     margin-top: 10vh;
-    margin-left: 39vw;
+    text-align: center;
 }
-h3{
-    margin-left: 45vw;
+h3{ 
+    margin-right: 10px;
+    text-align: center;
 }
 button{
     margin-right: 40px;
