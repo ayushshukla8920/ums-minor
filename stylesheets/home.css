@@ -7,18 +7,19 @@ body{
     color: white;
 }
 .main{
-    margin-top: 30vh;
-    margin-left: 36vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h1{
-    margin-top: 10vh;
-    text-align: center;
+    margin-top: 2vh;
 }
-h2{
-    text-align: center;
-}
-h3{ 
-    margin-right: 10px;
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
 }
 button{
     margin-right: 40px;
@@ -42,7 +43,9 @@ button:hover{
     color: black;
 }
 .two{
+    margin-top: 15vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: 0vh;
-    margin-top: 5vh;
 }
