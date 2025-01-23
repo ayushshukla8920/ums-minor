@@ -116,3 +116,7 @@ input::-webkit-inner-spin-button {
 #clear{
     background-color: #FF69B4;
 }
+.update{
+    text-align: center;
+    margin-top: 5%;
+}
