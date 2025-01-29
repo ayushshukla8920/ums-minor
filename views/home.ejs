@@ -27,6 +27,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             margin-bottom: 10vh;
         }
         button{
@@ -47,14 +48,17 @@
             display: flex;
         }
         .two button{
-            background-color: rgb(255, 218, 9);
+            background-color: rgb(232, 145, 78);
             color: black;
         }
         .two{
-            margin-top: 15vh;
+            margin-top: 5vh;
             display: flex;
+            flex-direction: column;
+            gap: 20px;
             align-items: center;
-            padding-left: 0vh;
+            justify-content: center;
+            padding-left: 5vh;
         }
     </style>
 </head>
@@ -62,7 +66,7 @@
     <div class="main">
         <div class="head">
             <h1>RMS</h1>
-            <h1>[ Rank Managament System ]</h1><br>
+            <h1 style="text-align: center;">Rank Management <br> System</h1><br>
             <h3>by Ayush Shukla</h3><br>
         </div>
         <div style="display: flex ; justify-content: center; align-items: center;">
@@ -73,7 +77,8 @@
         </div>
         <div class="two">
             <a href="/find_cgpa"><button>Find your CGPA</button></a>
-            <a href="/rank"><button>Find your Rank [B.Tech]</button></a>
+            <a href="/rank-2023"><button style="background-color: rgb(201, 201, 201);">Rank <br> [B.Tech CSE 2023]</button></a>
+            <a href="/rank-2024"><button style="color: rgb(255, 255, 255); background-color: rgb(96, 185, 111);">Rank <br>[B.Tech CSE 2024]</button></a>
         </div>
     </div>
 </body>
